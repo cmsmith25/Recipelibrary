@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="finalstyle.css">
+	<title>My Recipe Library</title>
+	
+<style>
+	.header h1 {
+	text-align: center;
+	color: #949FA0;
+	font-size: 70px;
+	font-family: "Lucida Handwriting";
+	padding: 3px;
+	text-shadow: 2px 2px 5px black;
+}
+
+	.addform form {
+	border-radius: 5px;
+	background-color: #d1e0e0;
+	padding: 30px 5px 30px 20px;
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+	.addform form input {
+	width: 60%;
+	border: 2px solid black;
+	border-radius: 3px;
+	font-size: 16px;
+}
+
+	.addform form textarea {
+	width: 78%;
+	border: 2px solid black;
+	border-radius: 3px;
+}
+
+	.addform button {
+	width: 25%;
+	height: 25px;
+	background-color: #248f8f;
+}
+	
+</style>
+</head>
+	
+	
+<body>
+	<img src="smile.jpg" alt="Smile Spoon" class="smile">
+	<div class="header">
+		<h1>Add New Recipe</h1>
+	</div>
+	
+	<nav>
+		<a href="final.html">Home</a>
+		<a href="recipes.html">Recipes</a>
+		<a href="conversions.html">Conversions</a>
+		<a href="addrecipe.html">Add to Library</a>
+		<a href="findnew.html">Find New Recipes</a>
+	</nav>
+	<br>
+	<br>
+    
+    
+
+	<div class="addform">
+
+		<form action="/action_page.php" target="_self" class="addrecipe">
+			<label for="rname">Recipe Name:</label>
+			<input type="text" id="rname" name="rname" placeholder="Name of Recipe"><br>
+			<label for="ingred">Ingredients:</label><br>
+			<textarea name="ingredients" rows="10" cols="30">
+			</textarea><br>
+			<label for="direct">Directions:</label><br>
+			<textarea name="directions" rows="10" cols="30">
+			</textarea><br>
+			<button onclick="addRec()">Add Recipe</button>
+		</form>
+	
+	</div>
+
+
+	<script src="final.js"></script>
+	<script src="final2.js"></script>
+	
+	
+</body>
+</html>

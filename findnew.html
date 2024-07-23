@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="finalstyle.css">
+	<link <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+	integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+	crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<title>My Recipe Library</title> <!--I used an imported font to create my search button with the magnifying glass icon-->
+	
+<style>
+	.header h1 {
+	text-align: center;
+	color: #949FA0;
+	font-size: 70px;
+	font-family: "Lucida Handwriting";
+	padding: 20px;
+	text-shadow: 2px 2px 5px black;
+}
+
+.center {
+	width: 40%;
+	height: 120px;
+}
+
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: Arial, Helvetica;
+}
+</style>
+
+    
+    
+</head>
+<body>
+	<img src="cooking.jpg" alt="Cooking Supplies" class="center">
+	<div class="header">
+		<h1>Find New Recipes</h1>
+	</div>
+	
+	
+	<nav>
+		<a href="final.html">Home</a>
+		<a href="recipes.html">Recipes</a>
+		<a href="conversions.html">Conversions</a>
+		<a href="addrecipe.html">Add to Library</a>
+		<a href="findnew.html">Find New Recipes</a>
+	</nav>
+	
+	<div class="explain">
+		<p><b>Use the search bar below to find new recipes to add to your collection!</b><br>
+			<br>
+			(In my future plans, I would have each of the recipe results display a link to the recipe online) </p>
+	</div>
+	
+	<div class="container">
+		<h1 class="heading">Find a New Recipe</h1>
+		<div class="recipe-holder">
+			<form class="recipe-holder-flex" id="submit">
+				<input type="text" id="search"
+									placeholder="Search for a new recipe Eg: chicken"
+									autocomplete:"off"
+				/>	
+				<button class="search-btn" type="submit">
+					<i class="fas fa-search"></i>
+			</form>
+		</div>
+		<p id="recipe-result-title" class="recipe-result-title">
+		</p>
+		<div class="recipes-container">
+			<div id="recipes" class="all-recipes"></div>
+		</div>
+	</div>
+
+	<script src="final4.js"></script>
+	
+
+
+
+	
+	
+</body>
+</html>
+

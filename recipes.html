@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	<link rel="stylesheet" href="finalstyle.css">
+	<title>My Recipe Library</title>
+	
+	
+<style>
+	.header h1 {
+	text-align: center;
+	color: #949FA0;
+	font-size: 60px;
+	font-family: "Lucida Handwriting";
+	padding: 3px;
+	text-shadow: 2px 2px 5px black;
+}
+
+</style>
+
+
+</head>
+<body>
+<img src="recipe1.jpg" alt="Recipe Box" class="box">
+<br>
+	<nav>
+		<a href="final.html">Home</a>
+		<a href="recipes.html">Recipes</a>
+		<a href="conversions.html">Conversions</a>
+		<a href="addrecipe.html">Add to Library</a>
+		<a href="findnew.html">Find New Recipes</a>
+	</nav>
+	
+	<div class="header">
+		<h1>My Favorite Recipes</h1>
+	</div>
+	
+	
+	<div class= "wrapper">
+		<div class="search-option">
+			<i class="fa-solid fa-magnifying-glass"></i> <!--Magnifying glass icon is added with an imported font-->
+			<input type="text" placeholder="Search My Recipes">
+		</div>
+		<div class="images">
+			<div class="image-container" data-name="cajun pasta"> <!--The data-name of each image on this page is used by the search function to determine which recipes match the value
+																	  that is input by the user-->
+				<h5>Cajun Pasta</h5>
+				<img src="images/cajunpasta.jpg" alt="">
+			<button onclick="btn1()">See Recipe</button> <!--Each recipe image has its own function attached to it that will be called upon the button click for the recipe.-->
+			</div>
+			<div class="image-container" data-name="sugar cookie">
+				<h5>Perfect Sugar Cookies</h5>
+				<img src="images/sugarcookie.jpg" alt=""/>
+			<button onclick="btn2()">See Recipe</button>
+			</div>
+			<div class="image-container" data-name="beef broccoli">
+				<h5>Beef and Broccoli</h5>
+				<img src="images/beefbroccoli.jpg" alt=""/>
+			<button onclick="btn3()">See Recipe</button>
+			</div>
+			<div class="image-container" data-name="cheddar party mix">
+				<h5>Cheddar Party Mix</h5>
+				<img src="images/cheddarmix.jpg" alt=""/>
+			<button onclick="btn4()">See Recipe</button>
+			</div>
+			<div class="image-container" data-name="instant burger">
+				<h5>Instant Pot Burgers</h5>
+				<img src="images/ipburger.jpg" alt=""/>
+			<button onclick="btn5()">See Recipe</button>
+			</div>
+			<div class="image-container" data-name="potato">
+				<h5>Baked Potato Casserole</h5>
+				<img src="images/potatocass.jpg" alt=""/>
+			<button onclick="btn6()">See Recipe</button>
+			</div>
+			<div class="image-container" data-name="roasted potato">
+				<h5>Roasted Potato Bites</h5>
+				<img src="images/roastedpotato.jpg" alt=""/>
+			<button onclick="btn7()">See Recipe</button>
+			</div>
+			<div class="image-container"data-name="taco pasta">
+				<h5>Taco Pasta</h5>
+				<img src="images/tacopasta.jpg"/>
+			<button onclick="btn8()">See Recipe</button>
+			</div>
+			<div class="image-container" data-name="tostada">
+				<h5>Fried Flour Tostadas</h5>
+				<img src="images/tostada.jpg" alt=""/>
+			<button onclick="btn9()">See Recipe</button>
+			</div>
+			<div class="image-container" data-name="lemon cookie">
+				<h5>Lemon Crinkle Cookies</h5>
+				<img src="images/lemoncrinkle.jpg" alt=""/>
+			<button onclick="btn10()">See Recipe</button>
+			</div>
+			<div class="image-container" data-name="salsa">
+				<h5>Garden Salsa</h5>
+				<img src="images/salsa.jpg" alt=""/>
+			<button onclick="btn11()">See Recipe</button>
+			</div>
+			<div class="image-container" data-name="icing frosting">
+				<h5>Homemade Icing</h5>
+				<img src="images/icing.jpg" alt=""/>
+			<button onclick="btn12()">See Recipe</button>
+			</div>
+			<div class="image-container" data-name="donut">
+				<h5>Air Fryer Donut Holes</h5>
+				<img src="images/donutholes.jpg" alt=""/>
+			<button onclick="btn13()">See Recipe</button>
+			</div>
+			<div class="image-container" data-name="pancake">
+				<h5>Sheet Pan Pancakes</h5>
+				<img src="images/pancake.jpg" alt=""/>
+			<button onclick="btn14()">See Recipe</button>
+			</div>
+			<div class="image-container" data-name="quiche">
+				<h5>Ham and Cheddar Quiche</h5>
+				<img src="images/quiche.jpg" alt=""/>
+			<button onclick="btn15()">See Recipe</button>
+			</div>
+			<div class="image-container" data-name="goulash">
+				<h5>Mama's Goulash</h5>
+				<img src="images/goulash.jpg" alt=""/>
+			<button onclick="btn16()">See Recipe</button>
+			</div>
+		</div>
+	</div>
+	<script src="final1.js"></script> <!--I linked each JavaScript file that was used in each page since I separated the functions into separate files.-->
+	<script src="final3.js"></script>
+	
+	
+	
+</body>
+</html>
